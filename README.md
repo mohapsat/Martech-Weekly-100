@@ -6,5 +6,7 @@
 - Data providers - Amazon, Apple iBooks, Google Books
 - Indexing and searching powered by Algolia
 
+![](https://raw.githubusercontent.com/mohapsat/martech101/master/mt101_shot.PNG)
+
 ## License
 Distributed under the [MIT License](LICENSE).
