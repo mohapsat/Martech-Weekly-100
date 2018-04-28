@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109321302-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109321302-1');
+    </script>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="blog.css"/>
+
+
+    <title>Martech101 - Innovate. Distrupt.</title>
+  </head>
+<body style="background-color: #cdd3d41a;">
+  <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="btn btn-sm btn-outline-info disabled" href="#">Subscribe</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="#">Martech101</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+<!--
+            <a class="text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+-->
+
+          </div>
+        </div>
+</header>
+
+<main>
+
+  <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="px-0">
+            <h1 class="display-7"><code>Most Bought & Read Marketing Books of the Week</code></h1>
+            <p class="lead mb-0 my-3"><em>MARTECH101&trade;</em> ranks marketing books each week according to the number of copies sold
+                and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>
+        </div>
+    <!--<form>-->
+        <!--<div class="form-group">-->
+            <!--<input id="search-input"-->
+             <!--placeholder="Search for your favorite books, authors or publishers...">-->
+        <!--</div>-->
+    <!--</form>-->
+
+       <!--<input id="search-input" placeholder="Search for marketing books, authors or publishers">-->
+       <!-- We use a specific placeholder in the input to guides users in their search. -->
+  <span>
+      <input class="form-control" id="search-input" placeholder="Search for your favorite marketing tech or and busines books, authors or publishers...">
+      <img width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
+  </span>
+  </div>
+  <div id="pagination"></div>
+  <div id="hits" class="row"></div>
+
+</main>
+
+
+<script type="text/html" id="hit-template">
+  <div class="hit">
+            <div>
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                <a href="{{detail_page_url}}" target="_blank">
+                <strong class="d-inline-block mb-2 text-primary">{{{_highlightResult.author.value}}}
+                      <span class="badge badge-pill badge-success">${{list_price}}</span>
+                      <span class="badge badge-pill badge-warning">Pages: {{pages}}</span>
+                  </strong>
+                </a>
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="{{detail_page_url}}" target="_blank">{{{_highlightResult.title.value}}}</a>
+                  </h5>
+                  <div class="mb-1 text-muted">{{publication_date}}</div>
+                    <p class="card-text mb-auto"><code>Publisher: </code> {{{_highlightResult.publisher.value}}}</p>
+                    <a href="{{detail_page_url}}" target="_blank" class="badge badge-dark">Reviews</a>
+                    <a href="{{detail_page_url}}" target="_blank" class="badge badge-light">{{availability}}</a>
+                    <a href="{{detail_page_url}}"><em>Continue reading...</em></a>
+                </div>
+                  <img class="card-img-right flex-auto d-none d-md-block" src="{{large_image_url}}" alt="{{title}}"/>
+              </div>
+            </div>
+  </div>
+
+</script>
+
+
+<footer class="blog-footer">
+    <p>&copy;2018 <a href="#">Martech101&trade;</a> All rights reserved. </p>
+  <p>
+    <a class="btn btn-sm btn-outline-info" href="#">Back to top</a>&nbsp;
+    <!--<a class="btn btn-sm btn-outline-info" href="#">About Us</a>-->
+  </p>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--algolia-->
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+    <script src="app.js"></script>
+
+  </div>
+</body>
+</html>
