@@ -90,11 +90,13 @@
                   </h5>
                   <div class="mb-1 text-muted">{{publication_date}}</div>
                     <p class="card-text mb-auto"><code>Publisher: </code> {{{_highlightResult.publisher.value}}}</p>
-                    <a href="{{detail_page_url}}" target="_blank" class="badge badge-dark">Reviews</a>
+            <!--enhancement - add reviews later-->
+                    <!--<a href="{{detail_page_url}}" target="_blank" class="badge badge-dark">Reviews</a>-->
                     <a href="{{detail_page_url}}" target="_blank" class="badge badge-light">{{availability}}</a>
-                    <a href="{{detail_page_url}}"><em>Continue reading...</em></a>
+                    <a href="{{detail_page_url}}" target="_blank" class="btn btn-secondary btn-sm" role="button">Continue reading...</a>
+
                 </div>
-                  <img class="card-img-right flex-auto d-none d-md-block" src="{{large_image_url}}" alt="{{title}}"/>
+                  <img class="card-img-right flex-auto d-none d-md-block" src="{{large_image_url}}" alt="Cover"/>
               </div>
             </div>
   </div>

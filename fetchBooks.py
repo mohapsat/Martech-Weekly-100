@@ -10,11 +10,14 @@ amazon = AmazonAPI(conf.AMAZON_ACCESS_KEY, conf.AMAZON_SECRET_KEY, conf.AMAZON_A
 #
 # print(bn.)
 
-products = amazon.search_n(100
-                           , Keywords='Marketing'
+products = amazon.search_n(1000
+                           , Keywords="marketing technology"
                            , SearchIndex='Books'
-                           , ResponseGRoup='TopSellers'
-                           , Sort='salesrank')
+                           # , ResponseGroup='TopSellers'
+                           , Sort='relevancerank')
+
+# Valid response groups for ItemLookup requests include ['Request','ItemIds','Small','Medium','Large','Offers','OfferFull','OfferSummary','OfferListings','PromotionSummary','PromotionDetails','VariationMinimum','VariationSummary','VariationMatrix','VariationOffers','Variations','TagsSummary','Tags','ItemAttributes','MerchantItemAttributes','Tracks','Accessories','EditorialReview','SalesRank','BrowseNodes','Images','Similarities','Subjects','Reviews','ListmaniaLists','SearchInside','PromotionalTag','SearchBins','AlternateVersions','Collections','RelatedItems','ShippingCharges','ShippingOptions'].'
+
 # Valid sort values include
 #   'relevancerank'
 # ,'salesrank'
@@ -43,24 +46,26 @@ data = {}
 
 
 for i, product in enumerate(products):
-    data[i] = {"title" : product.title
+    data[i] = {
+                       "title" : str(product.title)[0:90]
                       ,"sales_rank" : str(product.sales_rank)
-                      ,"author" : product.author
+                      ,"author" : str(product.author)[0:20]
                       ,"large_image_url" : product.large_image_url
-                      ,"publisher" : product.publisher
+                      ,"publisher" : str(product.publisher)[0:34]
                       ,"publication_date" : str(product.publication_date)
                       ,"detail_page_url" : product.detail_page_url
                       ,"asin" : str(product.asin)
-                      ,"availability" : product.availability
+                      ,"availability" : str(product.availability)[0:25]
                       ,"isbn" : str(product.isbn)
                       ,"offer_url" : product.offer_url
                       ,"pages" : str(product.pages)
                       ,"price_and_currency" : str(product.price_and_currency[0])
                       ,"list_price" : str(product.list_price[0])
-                      ,"binding" : product.binding
-                   }
+                      ,"binding" : str(product.binding)[0:25]
+               }
 
     # print("{0}. '{1}'".format(i, product.title))
+
 data_list = list(data.values())
 # print(data_list)
 
@@ -82,6 +87,10 @@ client = algoliasearch.Client(conf.ApplicationID, conf.ApiKey)
 # # #
 index = client.init_index("idx_mt101")
 # # #
+#trunc and load index
+index.clear_index()
+
+#load index
 batch = json.load(open('mt101_data.txt'))
 # # #
 # # # # add json to index idx_mt101
