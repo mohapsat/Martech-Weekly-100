@@ -10,8 +10,8 @@ amazon = AmazonAPI(conf.AMAZON_ACCESS_KEY, conf.AMAZON_SECRET_KEY, conf.AMAZON_A
 #
 # print(bn.)
 
-products = amazon.search_n(1000
-                           , Keywords="marketing technology"
+products = amazon.search_n(500
+                           , Keywords="marketing technology analytics data"
                            , SearchIndex='Books'
                            # , ResponseGroup='TopSellers'
                            , Sort='relevancerank')
