@@ -5,6 +5,7 @@
 
 - Data providers - Amazon, Apple iBooks, Google Books
 - Indexing and searching powered by Algolia
+- Mailchimp API v3 for subscription
 
 ## License
 Distributed under the [MIT License](LICENSE).
