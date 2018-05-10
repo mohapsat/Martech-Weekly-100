@@ -95,26 +95,69 @@
 
 <main>
 
-  <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="px-0">
-            <h2 class="text-warning">Most Sold & Read Marketing Books of the Week</h2>
-            <p class="lead mb-0 my-3"><em>MARTECH101&trade;</em> ranks marketing books each week according to the number of copies sold
-                and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>
-        </div>
-    <!--<form>-->
-        <!--<div class="form-group">-->
-            <!--<input id="search-input"-->
-             <!--placeholder="Search for your favorite books, authors or publishers...">-->
+  <!--<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">-->
+        <!--<div class="px-0">-->
+            <!--<h2 class="text-warning">Most Sold & Read Marketing Books of the Week</h2>-->
+            <!--<p class="lead mb-0 my-3"><em>MARTECH101&trade;</em> ranks marketing books each week according to the number of copies sold-->
+                <!--and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>-->
         <!--</div>-->
-    <!--</form>-->
+    <!--&lt;!&ndash;<form>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input id="search-input"&ndash;&gt;-->
+             <!--&lt;!&ndash;placeholder="Search for your favorite books, authors or publishers...">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</form>&ndash;&gt;-->
 
-       <!--<input id="search-input" placeholder="Search for marketing books, authors or publishers">-->
-       <!-- We use a specific placeholder in the input to guides users in their search. -->
-  <span>
-      <input class="form-control" id="search-input" placeholder="Search for your favorite marketing tech or business books, authors or publishers...">
-      <img width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
-  </span>
+       <!--&lt;!&ndash;<input id="search-input" placeholder="Search for marketing books, authors or publishers">&ndash;&gt;-->
+       <!--&lt;!&ndash; We use a specific placeholder in the input to guides users in their search. &ndash;&gt;-->
+      <!--<span>-->
+          <!--<input class="form-control" id="search-input" placeholder="Search for your favorite marketing tech or business books, authors or publishers...">-->
+          <!--<img width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">-->
+      <!--</span>-->
+  <!--</div>-->
+
+  <div class="jumbotron p-3 text-white rounded bg-dark">
+        <div class="px-0">
+            <!--<h2 class="text-warning">Most Sold & Read Marketing Books of the Week</h2>-->
+        <div class="row">
+            <div class="col col-lg-6">
+
+                <p class="lead mb-0 my-3"><strong>MARTECH101&trade;</strong> ranks marketing books each week according to the number of copies sold
+                    and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>
+                <span>
+                      <input class="form-control" id="search-input" placeholder="Search for your favorite marketing books...">
+                      <img width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
+                </span>
+            </div>
+            <div class="col d-none d-lg-block d-xl-block">
+                <div class="card bg-info text-white">
+                        <img height="190" class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/51YyoZiIacL.jpg" alt="Featured 1">
+                  <div class="card-img-overlay">
+                    <a href="https://www.amazon.com/gp/product/B073WSD7ZS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B073WSD7ZS&linkCode=as2&tag=mobile068476d-20&linkId=0cfa86546a6f4c858854a1eea995d782" class="badge badge-danger">FEATURED</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block d-xl-block">
+                <div class="card bg-warning text-white">
+                  <img height="190" class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/41DUw8Xp1wL.jpg" alt="Featured 1">
+                  <div class="card-img-overlay">
+                    <a href="https://www.amazon.com/Olivers-trip-Park-M-B-ebook/dp/B07645BX75/ref=as_sl_pc_tf_til?tag=mobile068476d-20&linkCode=w00&linkId=52f2d9bbeb71dcf86f753637b3ed40e4&creativeASIN=B07645BX75" class="badge badge-danger">FEATURED</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block d-xl-block">
+                <div class="card bg-secondary text-white">
+                  <img height="190" class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/51bN4fiMy3L.jpg" alt="Featured 1">
+                  <div class="card-img-overlay">
+                    <a href="https://www.amazon.com/dp/B0763LKCWK?ref=as_sl_pc_tf_til?tag=mobile068476d-20" class="badge badge-danger">FEATURED</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
+
+
   <div id="pagination"></div>
   <div id="hits" class="row"></div>
 
