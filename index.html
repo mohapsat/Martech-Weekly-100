@@ -108,20 +108,20 @@
 <main>
 
 
-<div class="row">
+<div class="row my-3">
   <div class="col bg-white text-default">
         <!--<div class="px-0">-->
             <!--<h2 class="text-warning">Most Sold & Read Marketing Books of the Week</h2>-->
             <!--<div class="col col-lg-6">-->
 
+
+
+                <p class="lead my-1"><strong>MARTECH101&trade;</strong> ranks marketing books each week according to the number of copies sold
+                    and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>
                 <span>
                       <input class="input form-control" id="search-input" placeholder="Search for your favorite marketing books...">
                       <img width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
                 </span>
-
-                <p class="lead my-1"><strong>MARTECH101&trade;</strong> ranks marketing books each week according to the number of copies sold
-                    and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>
-
             <!--</div>-->
             <!--<div class="col d-none d-lg-block d-xl-block">-->
                 <!--<div class="card bg-info text-white">-->
@@ -161,17 +161,17 @@
 <script type="text/html" id="hit-template">
   <div class="hit">
             <div>
-              <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                <div class="card-body d-flex flex-column align-items-start">
+              <div class="card">
+                <div class="card-header">
                 <a href="{{detail_page_url}}" target="_blank">
-                    <img class="card-img-right flex-auto d-none d-md-block rounded" src="{{large_image_url}}" alt="Cover"/>
+                    <img class="avatar avatar-lg" src="{{large_image_url}}" alt="Cover"/>
                 </a>
                 </div>
               </div>
             </div>
   </div>
 </script>
-      
+
 <footer class="blog-footer">
     <p>&copy;2018 <a href="#">Martech101&trade;</a> All rights reserved. </p>
   <p>
