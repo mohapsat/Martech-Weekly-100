@@ -5,7 +5,7 @@ var search = instantsearch({
   indexName: 'idx_mt101',
   urlSync: true,
   searchParameters: {
-    hitsPerPage: 10
+    hitsPerPage: 25
   }
 });
 
@@ -25,7 +25,7 @@ search.addWidget(
     },
     cssClasses: {
       root: 'row'
-      ,item: 'col-md-6'
+      ,item: 'col-lg-3 col-md-4 col-sm-6'
     }
   })
 );

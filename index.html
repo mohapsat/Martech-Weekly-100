@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109321302-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109321302-1"></script>-->
+    <!--<script>-->
+      <!--window.dataLayer = window.dataLayer || [];-->
+      <!--function gtag(){dataLayer.push(arguments);}-->
+      <!--gtag('js', new Date());-->
 
-      gtag('config', 'UA-109321302-1');
-    </script>
+      <!--gtag('config', 'UA-109321302-1');-->
+    <!--</script>-->
 
     <!-- Required meta tags -->
 
@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="blog.css">
+    <!--<link rel="stylesheet" type="text/css" href="blog.css">-->
 
-    <link type="text/css" href="/css/argon.css" rel="stylesheet">
+    <link type="text/css" href="css/argon.css" rel="stylesheet">
 <!--favicon-->
     <!--<link rel="shortcut icon" href="/images/lb1.ico">-->
 
@@ -35,150 +35,107 @@
   </head>
 <!--<body style="background-color: #cdd3d41a;">-->
 <body>
-  <div class="container">
-      <header class="blog-header">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <!--<div class="col-4 pt-2 text-muted">-->
-              <!--<a class="btn btn-sm btn-success" href="http://eepurl.com/ds9J0j">Subscribe to <em><strong>Weekly Top 20</strong></em></a>-->
-              <!--<a target="_blank" class="text-muted" href="https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=33c6f941b2">-->
-                 <!--<i class="fa fa-external-link-alt"></i>-->
-                  <!--Preview-->
-              <!--</a>-->
-              <!--<img src="images/icons8-happy-48.png">-->
-              <!--<img src="images/icons8-add-to-favorites-30.png">-->
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-default mb-1">
+    <div class="container">
+        <span>
+            <!--<img class=" avatar avatar-md bg-white mr-2" src="{% static '/assets/img/brand/players/bunny1_jump.png' %}">-->
+            <a class="navbar-brand" href="#">MARTECH101<sup>&copy;</sup></a>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-9 collapse-brand">
+                        <a href="#">
+                            <span>
+                                <!--<img class=" avatar avatar-sm bg-light mr-2" src="{% static '/assets/img/brand/players/bunny2_jump.png' %}">-->
+                                <a class="text-primary heading" href="#">MARTECH101<sup>&copy;</sup></a>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-3 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-          <!--</div>-->
+            <ul class="navbar-nav ml-lg-auto">
 
-            <a class="text-muted display-4" href="#">
-            <!--<img height="40" src="images/lit-pixl.png">-->
-                MARTECH 101
-            </a>
-
-          <!--<div class="float-right">-->
-            <!--&lt;!&ndash;twitter&ndash;&gt;-->
-                <!--<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="MARTECH101 - Get the most sold &amp; read #marketing #books of the week" data-url="http://www.martech101.com" data-hashtags="martech,crm" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
-            <!--&lt;!&ndash;linkedin&ndash;&gt;-->
-
-                <!--<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>-->
-                <!--<script type="IN/Share" data-url="http://martech101.com"></script>-->
-            <!--&lt;!&ndash;Facebook&ndash;&gt;-->
-            <!--&lt;!&ndash;TBD&ndash;&gt;-->
-            <!--</div>-->
-
-          <!--<div class="col-4 d-flex justify-content-end align-items-center">-->
-
-            <!--<a class="text-muted" href="#">-->
-              <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>-->
-            <!--</a>-->
-              <!--<a class="btn btn-sm btn-light" href="https://www.paypal.me/mohapsat/5" target="_blank">-->
-                  <!--<img src="coffee-btn-logo.svg" alt="coffee">-->
-                  <!--Buy me a coffee-->
-              <!--</a>-->
-
-          <!--</div>-->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-text" target="_blank" href="http://eepurl.com/ds9J0j">
+                        <kbd class="bg-yellow text-default ml-2 my-1">
+                                <i class="fa fa-star"></i>
+                               YOUR WEEKLY FIX
+                        </kbd>
+                        <span class="nav-link-inner--text d-lg-none"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-text" target="_blank" href="https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=33c6f941b2">
+                        <kbd class="bg-info text-default ml-2 my-1">
+                                <i class="fa fa-external-link-alt"></i>
+                               PREVIEW NEWSLETTER
+                        </kbd>
+                        <span class="nav-link-inner--text d-lg-none"></span>
+                    </a>
+                </li>
+            </ul>
         </div>
-</header>
-      <div class="py-1">
-        <nav class="nav d-flex justify-content-between">
-            <div class="nav-item">
-                <a  target="_blank" class="btn btn-primary" href="http://eepurl.com/ds9J0j">Subscribe to Weekly Top 20</a>
-                  <a target="_blank" class="text-muted" href="https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=33c6f941b2">
-                     <i class="fa fa-external-link-alt"></i>
-                      Preview
-                  </a>
-            </div>
-            <!--<div class="nav-item">-->
-              <!--<a class="btn btn-light" href="https://www.paypal.me/mohapsat/5" target="_blank">-->
-                  <!--<img src="coffee-btn-logo.svg" alt="coffee">-->
-                  <!--Buy me a coffee-->
-              <!--</a>-->
-            <!--</div>-->
-            <div class="nav-item">
-              <a class="btn btn-purple" href="http://eepurl.com/ds9J0j" target="_blank">
-                  <!--<img width="20" height="20" src="images/lit.png" alt="coffee">-->
-                  <!--<img src="images/icons8-medal-30.png">-->
-                  Feature your book
-              </a>
-            </div>
-
-        </nav>
-      </div>
-
-<main>
+    </div>
+</nav>
 
 
-<div class="row my-3">
-  <div class="col bg-white text-default">
-        <!--<div class="px-0">-->
-            <!--<h2 class="text-warning">Most Sold & Read Marketing Books of the Week</h2>-->
-            <!--<div class="col col-lg-6">-->
+<div class="container">
 
+    <main>
 
-
-                <p class="lead my-1"><strong>MARTECH101&trade;</strong> ranks marketing books each week according to the number of copies sold
-                    and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.</p>
+        <div class="row my-2">
+            <div class="col bg-white text-default">
+                <p class="h5 font-weight-light text-primary my-2"><strong>MARTECH101<sup>&copy;</sup></strong> indexes and ranks marketing books each week according to the number of copies sold
+                and pre-ordered through leading online book stores (aka. Amazon, Apple iBooks and Barnes & Noble). </p>
                 <span>
-                      <input class="input form-control" id="search-input" placeholder="Search for your favorite marketing books...">
-                      <img width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
+                      <input class="input form-control lead" id="search-input" placeholder="Search Top Sellers in MARTECH...">
+                      <img class="badge" width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
                 </span>
-            <!--</div>-->
-            <!--<div class="col d-none d-lg-block d-xl-block">-->
-                <!--<div class="card bg-info text-white">-->
-                        <!--<img height="190" class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/51YyoZiIacL.jpg" alt="Featured 1">-->
-                  <!--<div class="card-img-overlay">-->
-                    <!--<a href="https://www.amazon.com/gp/product/B073WSD7ZS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B073WSD7ZS&linkCode=as2&tag=mobile068476d-20&linkId=0cfa86546a6f4c858854a1eea995d782" class="badge badge-danger">FEATURED</a>-->
-                  <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col d-none d-lg-block d-xl-block">-->
-                <!--<div class="card bg-warning text-white">-->
-                  <!--<img height="190" class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/41DUw8Xp1wL.jpg" alt="Featured 1">-->
-                  <!--<div class="card-img-overlay">-->
-                    <!--<a href="https://www.amazon.com/Olivers-trip-Park-M-B-ebook/dp/B07645BX75/ref=as_sl_pc_tf_til?tag=mobile068476d-20&linkCode=w00&linkId=52f2d9bbeb71dcf86f753637b3ed40e4&creativeASIN=B07645BX75" class="badge badge-danger">FEATURED</a>-->
-                  <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col d-none d-lg-block d-xl-block">-->
-                <!--<div class="card bg-secondary text-white">-->
-                  <!--<img height="190" class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/51bN4fiMy3L.jpg" alt="Featured 1">-->
-                  <!--<div class="card-img-overlay">-->
-                    <!--<a href="https://www.amazon.com/dp/B0763LKCWK?ref=as_sl_pc_tf_til?tag=mobile068476d-20" class="badge badge-danger">FEATURED</a>-->
-                  <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
 
-    <!--</div>-->
-  </div>
-</div>
+            </div>
+        </div>
 
-  <div class="pagination" id="pagination"></div>
-  <div id="hits" class="row"></div>
-
+        <div id="hits"></div>
+        <div class="pagination mt-sm" id="pagination"></div>
 </main>
 
 
 <script type="text/html" id="hit-template">
-  <div class="hit">
-            <div>
-              <div class="card">
-                <div class="card-header">
-                <a href="{{detail_page_url}}" target="_blank">
-                    <img class="avatar avatar-lg" src="{{large_image_url}}" alt="Cover"/>
-                </a>
-                </div>
-              </div>
+  <div class="hit my-3">
+
+              <div class="card border-1 mb-md" style="width: 12rem; height: 12rem;">
+                  <!--<div class="card-header">-->
+                      <a href="{{offer_url}}" class="btn-block">
+                          <kbd class="bg-blue text-white float-right">
+
+                              <small>README</small>
+                          </kbd>
+                      </a>
+                  <!--</div>-->
+                  <img class="card-img-top" src="{{large_image_url}}" alt="cover">
             </div>
   </div>
 </script>
 
-<footer class="blog-footer">
-    <p>&copy;2018 <a href="#">Martech101&trade;</a> All rights reserved. </p>
+<div class="justify-content-center">
+    <p>&copy;2019 <a href="#">MARTECH101&copy;</a> All rights reserved. </p>
   <p>
     <a class="btn btn-sm btn-outline-info" href="#">Back to top</a>&nbsp;
     <!--<a class="btn btn-sm btn-outline-info" href="#">About Us</a>-->
   </p>
-</footer>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -190,7 +147,7 @@
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
     <script src="app.js"></script>
 
-    <script src="/js/argon.js"></script>
+    <script src="js/argon.js"></script>
 
     <!--mailchimp subscribe -->
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"9e95db2f6a7bbb82bbbef27a7","lid":"2ec66579e8"}) })</script>
