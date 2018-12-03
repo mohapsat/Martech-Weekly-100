@@ -5,7 +5,7 @@ var search = instantsearch({
   indexName: 'idx_mt101',
   urlSync: true,
   searchParameters: {
-    hitsPerPage: 25
+    hitsPerPage: 100
   }
 });
 
