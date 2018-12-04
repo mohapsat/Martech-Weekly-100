@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109321302-1"></script>-->
@@ -39,8 +39,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-default mb-1">
     <div class="container">
         <span>
-            <!--<img class=" avatar avatar-md bg-white mr-2" src="{% static '/assets/img/brand/players/bunny1_jump.png' %}">-->
-            <a class="navbar-brand" href="#">MARTECH101<sup>&copy;</sup></a>
+            <img class=" avatar avatar-md bg-white mr-2"
+                src="https://media.licdn.com/dms/image/C5603AQFRgtx1hhZS8A/profile-displayphoto-shrink_200_200/0?e=1549497600&v=beta&t=XacHVmg6xnuUgciphgkI7Sx_mBi63ySEopYWrON5r1c">
+            <!--src="https://www.task-a-thon.com/static/assets/img/brand/players/bunny1_jump.png"-->
+            <a class="navbar-brand heading" href="#">MARTECH101<sup>&copy;</sup></a>
         </span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,8 +72,8 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-text" target="_blank" href="http://eepurl.com/ds9J0j">
                         <kbd class="bg-yellow text-default ml-2 my-1">
-                                <i class="fa fa-star"></i>
-                               YOUR WEEKLY FIX
+                                <i class="fa fa-unlock-alt"></i>
+                            UNLOCK WEEKLY <strong>TOP 20</strong>
                         </kbd>
                         <span class="nav-link-inner--text d-lg-none"></span>
                     </a>
@@ -80,7 +82,16 @@
                     <a class="nav-link nav-link-text" target="_blank" href="https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=33c6f941b2">
                         <kbd class="bg-info text-default ml-2 my-1">
                                 <i class="fa fa-external-link-alt"></i>
-                               PREVIEW NEWSLETTER
+                               PREVIEW BOOKS
+                        </kbd>
+                        <span class="nav-link-inner--text d-lg-none"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-text" target="_blank" href="https://www.linkedin.com/in/satyamadhav">
+                        <kbd class="bg-warning text-white ml-2 my-1">
+                                <i class="fa fa-share-alt"></i>
+                               GET IN TOUCH
                         </kbd>
                         <span class="nav-link-inner--text d-lg-none"></span>
                     </a>
@@ -97,11 +108,17 @@
 
         <div class="row my-2">
             <div class="col bg-white text-default">
-                <p class="h5 font-weight-light text-primary my-2"><strong>MARTECH101<sup>&copy;</sup></strong> indexes and ranks marketing books each week according to the number of copies sold
-                and pre-ordered through leading online book stores (aka. Amazon, Apple iBooks and Barnes & Noble). </p>
+                <p class="lead text-default my-2">
+                    <strong>MARTECH101<sup>&copy;</sup> ranks <u>101 marketing technology books</u> each week according to the number of copies sold
+                    and pre-ordered through leading online book stores including Amazon Kindle, Apple iBooks and Barnes & Noble.
+                    </strong>
+                </p>
+
                 <span>
-                      <input class="input form-control lead" id="search-input" placeholder="Search Top Sellers in MARTECH...">
-                      <img class="badge" width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">
+                      <input class="input form-control lead" id="search-input"
+                             placeholder="Search Top Sellers in MARTECH...">
+                    <small class="float-right text-muted text-upper">Algolia<sup>&copy;</sup></small>
+                      <!--<img class="badge" width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">-->
                 </span>
 
             </div>
@@ -115,24 +132,27 @@
 <script type="text/html" id="hit-template">
   <div class="hit my-3">
 
-              <div class="card border-1 mb-md" style="width: 12rem; height: 12rem;">
+              <div class="card border-0 mb-md align-content-center" style="width: 12rem; height: 12rem;">
                   <!--<div class="card-header">-->
-                      <a href="{{offer_url}}" class="btn-block">
-                          <kbd class="bg-blue text-white float-right">
-
-                              <small>README</small>
+                      <a href="{{offer_url}}" target="_blank" class="btn-block my-1">
+                          <kbd class="bg-blue text-white">
+                              <i class="fa fa-arrow-down"></i>
+                              <small>READ</small>
                           </kbd>
                       </a>
                   <!--</div>-->
-                  <img class="card-img-top" src="{{large_image_url}}" alt="cover">
+                  <a href="{{offer_url}}">
+                      <img class="card-img-top" src="{{large_image_url}}" alt="cover">
+                  </a>
             </div>
   </div>
 </script>
 
 <div class="justify-content-center">
-    <p>&copy;2019 <a href="#">MARTECH101&copy;</a> All rights reserved. </p>
+
+    <p>2019 <a href="#">MARTECH101&copy;</a> All rights reserved. </p>
   <p>
-    <a class="btn btn-sm btn-outline-info" href="#">Back to top</a>&nbsp;
+    <a class="btn btn-sm btn-info" href="#">Back to top</a>&nbsp;
     <!--<a class="btn btn-sm btn-outline-info" href="#">About Us</a>-->
   </p>
 </div>
