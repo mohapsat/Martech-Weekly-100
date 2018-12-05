@@ -34,9 +34,9 @@
 
   </head>
 <!--<body style="background-color: #cdd3d41a;">-->
-<body>
+<body class="bg-secondary">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-default mb-1">
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-indigo mb-1">
     <div class="container">
         <span>
             <!--src="https://media.licdn.com/dms/image/C5603AQFRgtx1hhZS8A/profile-displayphoto-shrink_200_200/0?e=1549497600&v=beta&t=XacHVmg6xnuUgciphgkI7Sx_mBi63ySEopYWrON5r1c">-->
@@ -73,29 +73,29 @@
                     <a class="nav-link nav-link-text" target="_blank" href="http://eepurl.com/ds9J0j">
                         <kbd class="bg-yellow text-default ml-2 my-1">
                                 <i class="fa fa-unlock-alt"></i>
-                            UNLOCK WEEKLY <strong>TOP 20</strong>
+                            SUBSCRIBE TO WEEKLY <strong>TOP 20</strong>
                         </kbd>
                         <span class="nav-link-inner--text d-lg-none"></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-text" target="_blank" href="https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=33c6f941b2">
-                        <kbd class="bg-info text-default ml-2 my-1">
-                                <i class="fa fa-external-link-alt"></i>
-                               PREVIEW BOOKS
-                        </kbd>
-                        <span class="nav-link-inner--text d-lg-none"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-text" target="_blank" href="https://www.linkedin.com/in/satyamadhav">
                         <kbd class="bg-warning text-white ml-2 my-1">
-                                <i class="fa fa-share-alt"></i>
-                               GET IN TOUCH
+                                <i class="fa fa-external-link-alt"></i>
+                               QUICK LOOK
                         </kbd>
                         <span class="nav-link-inner--text d-lg-none"></span>
                     </a>
                 </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link nav-link-text" target="_blank" href="https://www.linkedin.com/in/satyamadhav">-->
+                        <!--<kbd class="bg-warning text-white ml-2 my-1">-->
+                                <!--<i class="fa fa-share-alt"></i>-->
+                               <!--GET IN TOUCH-->
+                        <!--</kbd>-->
+                        <!--<span class="nav-link-inner&#45;&#45;text d-lg-none"></span>-->
+                    <!--</a>-->
+                <!--</li>-->
             </ul>
         </div>
     </div>
@@ -106,22 +106,21 @@
 
     <main>
 
-        <div class="row my-2">
-            <div class="col bg-white text-default">
-                <p class="lead text-default my-2">
-                    <strong>MARTECH101<sup>&copy;</sup> ranks <u>marketing technology books</u> each week according to the number of copies sold
-                    and pre-ordered through leading online book stores including Amazon Kindle, Apple iBooks and Barnes & Noble.
-                    </strong>
+        <div class="card bg-secondary border-0 shadow-sm ">
+        <!--<div class="row my-2">-->
+            <!--<div class="col bg-white text-default">-->
+                <p class="lead text-default ml-2">
+                    MARTECH101<sup>&copy;</sup> ranks <u>top selling marketing books</u> each week according to the number of copies sold
+                    and pre-ordered through leading online book stores including <strong>Amazon Kindle, Apple iBooks and Barnes & Noble</strong>.
+
                 </p>
 
-                <span>
-                      <input class="input form-control lead" id="search-input"
-                             placeholder="Search Top Sellers in MARTECH...">
-                    <small class="float-right text-muted text-upper">Algolia<sup>&copy;</sup></small>
+                <span class="container">
+                      <input class="input form-control lead mt-0" id="search-input"
+                             placeholder="Search Weekly Top Sellers...">
+                    <small class="float-right text-muted">Algolia<sup>&copy;</sup></small>
                       <!--<img class="badge" width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">-->
                 </span>
-
-            </div>
         </div>
 
         <div id="hits"></div>
@@ -130,12 +129,12 @@
 
 
 <script type="text/html" id="hit-template">
-  <div class="hit my-3">
+  <div class="hit my-1">
 
-              <div class="card border-0 mb-md align-content-center" style="width: 12rem; height: 12rem;">
+              <div class="card border-0 mb-md align-content-center bg-transparent" style="width: 12rem; height: 12rem;">
                   <!--<div class="card-header">-->
                       <a href="{{offer_url}}" target="_blank" class="btn-block my-1">
-                          <kbd class="bg-blue text-white">
+                          <kbd class="bg-info text-white">
                               <i class="fa fa-arrow-down"></i>
                               <small>READ</small>
                           </kbd>
