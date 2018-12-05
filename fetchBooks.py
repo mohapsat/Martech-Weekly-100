@@ -2,7 +2,11 @@ from amazon.api import AmazonAPI
 import idx_config as conf
 from algoliasearch import algoliasearch
 import json
+import os
+import ssl
 
+if (not os.environ.get('PYTHONHTTPSVERIFY', '') and getattr(ssl, '_create_unverified_context', None)):
+    ssl._create_default_https_context = ssl._create_unverified_context
 
 amazon = AmazonAPI(conf.AMAZON_ACCESS_KEY, conf.AMAZON_SECRET_KEY, conf.AMAZON_ASSOC_TAG)
 
@@ -10,7 +14,7 @@ amazon = AmazonAPI(conf.AMAZON_ACCESS_KEY, conf.AMAZON_SECRET_KEY, conf.AMAZON_A
 #
 # print(bn.)
 
-products = amazon.search_n(100
+products = amazon.search_n(500
                            , Keywords="marketing technology"
                            , SearchIndex='Books'
                            # , ResponseGroup='TopSellers'
@@ -46,22 +50,21 @@ data = {}
 
 
 for i, product in enumerate(products):
-    data[i] = {
-                       "title" : str(product.title)[0:90]
-                      ,"sales_rank" : str(product.sales_rank)
-                      ,"author" : str(product.author)[0:20]
-                      ,"large_image_url" : product.large_image_url
-                      ,"publisher" : str(product.publisher)[0:34]
-                      ,"publication_date" : str(product.publication_date)
-                      ,"detail_page_url" : product.detail_page_url
-                      ,"asin" : str(product.asin)
-                      ,"availability" : str(product.availability)[0:25]
-                      ,"isbn" : str(product.isbn)
-                      ,"offer_url" : product.offer_url
-                      ,"pages" : str(product.pages)
-                      ,"price_and_currency" : str(product.price_and_currency[0])
-                      ,"list_price" : str(product.list_price[0])
-                      ,"binding" : str(product.binding)[0:25]
+    data[i] = {"title": str(product.title)[0:90],
+               "sales_rank": str(product.sales_rank),
+               "author": str(product.author)[0:20],
+               "large_image_url": product.large_image_url,
+               "publisher": str(product.publisher)[0:34],
+               "publication_date": str(product.publication_date),
+               "detail_page_url": product.detail_page_url,
+               "asin": str(product.asin),
+               "availability": str(product.availability)[0:25],
+               "isbn": str(product.isbn),
+               "offer_url": product.offer_url,
+               "pages": str(product.pages),
+               "price_and_currency": str(product.price_and_currency[0]),
+               "list_price": str(product.list_price[0]),
+               "binding": str(product.binding)[0:25]
                }
 
     # print("{0}. '{1}'".format(i, product.title))
