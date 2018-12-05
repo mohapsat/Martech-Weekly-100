@@ -14,11 +14,21 @@ amazon = AmazonAPI(conf.AMAZON_ACCESS_KEY, conf.AMAZON_SECRET_KEY, conf.AMAZON_A
 #
 # print(bn.)
 
-products = amazon.search_n(500
-                           , Keywords="marketing technology"
-                           , SearchIndex='Books'
-                           # , ResponseGroup='TopSellers'
-                           , Sort='relevancerank')
+products = amazon.search_n(500,
+                           Keywords="marketing",
+
+                           SearchIndex='Books',
+                           # Sort='salesrank',
+                           # Sort='inverse-pricerank'
+                           # ResponseGroup='SalesRank',
+                           Sort='relevancerank',
+                           # Sort='daterank'
+                           # Sort='-unit-sales'
+
+                           )
+
+
+# 'The value you specified for Sort is invalid. Valid values include 'relevancerank','salesrank','reviewrank','pricerank','inverse-pricerank','daterank','titlerank','-titlerank','-unit-sales','price','-price','-publication_date'.'
 
 # Valid response groups for ItemLookup requests include ['Request','ItemIds','Small','Medium','Large','Offers','OfferFull','OfferSummary','OfferListings','PromotionSummary','PromotionDetails','VariationMinimum','VariationSummary','VariationMatrix','VariationOffers','Variations','TagsSummary','Tags','ItemAttributes','MerchantItemAttributes','Tracks','Accessories','EditorialReview','SalesRank','BrowseNodes','Images','Similarities','Subjects','Reviews','ListmaniaLists','SearchInside','PromotionalTag','SearchBins','AlternateVersions','Collections','RelatedItems','ShippingCharges','ShippingOptions'].'
 
