@@ -27,6 +27,7 @@ products = amazon.search_n(500,
 
                            )
 
+#TODO: https://docs.aws.amazon.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
 
 # 'The value you specified for Sort is invalid. Valid values include 'relevancerank','salesrank','reviewrank','pricerank','inverse-pricerank','daterank','titlerank','-titlerank','-unit-sales','price','-price','-publication_date'.'
 
