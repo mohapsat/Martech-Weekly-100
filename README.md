@@ -1,5 +1,3 @@
-# MARTECH101
-
 ![MARTECH101 LOGO](https://raw.githubusercontent.com/mohapsat/martech101/master/images/mt101_logo.png)
 
 ## Most Bought and Read Marketing Books of the Week
