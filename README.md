@@ -1,4 +1,5 @@
-![MARTECH101 LOGO](https://raw.githubusercontent.com/mohapsat/martech101/master/images/mt101_logo.png)
+<img src="https://raw.githubusercontent.com/mohapsat/martech101/master/images/mt101_logo.png" width="200" height="90"/>
+
 
 - [Preview - Weekly Newsletter](https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=16b0cae565)
 - [Newsletter Sign up > Your weekly fix of top marketing books.](https://martech101.us17.list-manage.com/subscribe?u=9e95db2f6a7bbb82bbbef27a7&id=2ec66579e8)
