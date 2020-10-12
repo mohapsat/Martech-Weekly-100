@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/mohapsat/martech101/master/martech_weekly_top100_logo.png" width="200" height="90"/>
+<img src="https://raw.githubusercontent.com/mohapsat/martech101/master/martech_weekly_top100_logo.png" height="90"/>
 
 
 - [Preview - Weekly Newsletter](https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=16b0cae565)
