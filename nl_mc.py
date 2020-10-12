@@ -62,7 +62,7 @@ html_data='<html><head><meta property=\"og:title\" content=\"MARTECH101 - Top So
           '</o:OfficeDocumentSettings> </xml> <![endif]--><meta charset=\"UTF-8\">' \
           '<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">' \
           '<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">' \
-          '<title>MARTECH101 - Most Sold and Read Marketing Books Weekly</title>' \
+          '<title>Martech Weekly - Most Sold and Read Marketing Books Weekly</title>' \
           '<style type=\"text/css\">html{font-weight:300}' \
           'p{margin:10px 0;padding:0}table{border-collapse:collapse}' \
           'h1,h2,h3,h4,h5,h6{display:block;margin:0;padding:0;font-weight:300 !important}' \
