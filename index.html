@@ -4,11 +4,13 @@
      <!--Global site tag (gtag.js) - Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109321302-1"></script>
     <script>
+    /*
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-109321302-1');
+    */
     </script>
 
     <!-- Required meta tags -->
@@ -34,15 +36,23 @@
     <meta name="Description" content="Martech Weekly ranks marketing books each week according to the number of copies sold and pre-ordered through leading online book stores. Bulk buys are counted as a single purchase.  Search for your favorite marketing technology and business books, authors or publishers.">
     <meta name="Keywords" content="books, marketing, crm, marketing technology, amazon, marketing strategy, customer relationship marketing, email marketing, seo, sem">
 
+  <!-- Font -->
+  <link rel='preload' id='front-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&#038;subset=latin%2Clatin-ext&#038;display=swap' as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+
+
+    <!-- Start of Async Presbot Code -->
+    <script async data-chaturl="http://www.presbot.com/127-martechweekly/embed/chat" data-imgurl="https://presbot-assets-prod.s3.amazonaws.com/static/assets/img/presbot-cancel.png" data-cssurl="https://presbot-assets-prod.s3.amazonaws.com/static/css/presbot-widget.css" src="https://presbot-assets-prod.s3.amazonaws.com/static/js/presbot-widget.js"></script>
+    <!-- End of Async Presbot Code -->
+
   </head>
 <!--<body style="background-color: #cdd3d41a;">-->
-<body class="bg-secondary">
+<body class="bg-secondary" style="font-family: poppins,Helvetica,Arial,sans-serif;word-break: break-word;">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-default mb-1">
+<nav class="navbar navbar-expand-lg navbar-dark  mb-1">
     <div class="container">
         <span>
             <!--src="https://media.licdn.com/dms/image/C5603AQFRgtx1hhZS8A/profile-displayphoto-shrink_200_200/0?e=1549497600&v=beta&t=XacHVmg6xnuUgciphgkI7Sx_mBi63ySEopYWrON5r1c">-->
-            <img class="mr-2" width="250px"
+            <img class="mr-2" width="350px"
                 src="https://raw.githubusercontent.com/mohapsat/martech101/master/martech_weekly_top100_logo.png">
 <!--            <a class="navbar-brand heading" href="#">MARTECH101<sup>&copy;</sup></a>-->
         </span>
@@ -73,18 +83,18 @@
 
                 <li class="nav-item">
                     <a class="nav-link nav-link-text" target="_blank" href="http://eepurl.com/ds9J0j">
-                        <kbd class="bg-yellow text-default ml-2 my-1 heading">
+                        <kbd class="bg-dark text-white ml-2 my-1">
                                 <i class="fa fa-unlock-alt"></i>
-                            SUBSCRIBE TO<span class="text-default"> TOP 20</span>
+                            Subscribe <span class="text-white"> Top 20</span>
                         </kbd>
                         <span class="nav-link-inner--text d-lg-none"></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-text" target="_blank" href="https://us17.campaign-archive.com/?u=9e95db2f6a7bbb82bbbef27a7&id=16b0cae565">
-                        <kbd class="bg-light text-default ml-2 my-1 heading">
+                        <kbd class="bg-dark text-white ml-2 my-1">
                                 <i class="fa fa-external-link-alt"></i>
-                            PREVIEW
+                            Preview
                         </kbd>
                         <span class="nav-link-inner--text d-lg-none"></span>
                     </a>
@@ -108,22 +118,21 @@
 
     <main>
 
-        <div class="card border-0 shadow-sm " style="background: #ebe6e2;">
+        <div class="card border-0 shadow-sm" style="background: #44403f;">
         <!--<div class="row my-2">-->
             <!--<div class="col bg-white text-default">-->
             <span class="container">
 
-                <p class="lead text-default ml-2 text-center">
-                    Read <span class="text-warning">top selling marketing books</span> ranked each week according to the number of copies sold
-                    and pre-ordered through Amazon Kindle, Apple iBooks and Barnes & Noble.
-
+                <p class="text-white ml-2 text-center mt-2" style="font-size:1.5em;">
+                    Read <b>top selling marketing books</b> each week on Amazon
                 </p>
 
-
-              <input class="input form-control lead mt-0" id="search-input"
+                <div class="w-75 mx-auto">
+                    <input class="input form-control lead mt-0" id="search-input"
                      placeholder="Search books...">
-                    <small class="float-right text-muted">Algolia<sup>&copy;</sup></small>
+                    <small class="float-right text-white">Algolia<sup>&copy;</sup></small>
                       <!--<img class="badge" width="60" height="15" style="padding-top:3px;float:right" src="https://d3nb9u6x572n0.cloudfront.net/assets/algolia-logo-white-65086ed3930483340981cc7aaab1be051e38bc091406fd806d0ad05640c1bc28.svg" alt="Algolia logo white">-->
+                </div>
             </span>
         </div>
 
@@ -138,21 +147,21 @@
               <div class="card  mb-sm align-content-center mt-1 bg-secondary border-0">
 
                   <div class="card-header bg-secondary">
-                      <a href="{{offer_url}}" target="_blank" class="btn-block">
-                          <kbd class="bg-white text-muted text-uppercase">
+                      <a href="{{offer_url}}" target="_blank" style="font-size:0.85em;">
+                          <span class="text-dark text-titlecase">
                               <!--<i class="fa fa-arrow-down"></i>-->
                               <!--<i class="fa fa-hand-o-down"></i>-->
                               <!--<i class="fa fa-chevron-down"></i>-->
                               <i class="fa fa-caret-down"></i>
-                              <small><strong>Author</strong>: {{author}}</small>
-                          </kbd>
+                              <strong>Author</strong>: {{author}}
+                          </span>
                       </a>
 
                   </div>
 
                   <div class="card-body border-0">
                     <a href="{{offer_url}}" target="_blank">
-                          <img class="card-img-top avarar avatar-rounded" src="{{large_image_url}}" alt="cover">
+                          <img class="card-img-top avarar avatar-rounded" src="{{large_image_url}}" width="30px;" height="180px" alt="cover">
                     </a>
                   </div>
 
